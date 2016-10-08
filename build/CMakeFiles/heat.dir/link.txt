@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/heat.dir/heat.c.o  -o heat -rdynamic /usr/local/mpich-3.2/lib/libmpi.so -lhdf5 -lpthread -lz -ldl -lm -Wl,-rpath,/usr/local/mpich-3.2/lib 

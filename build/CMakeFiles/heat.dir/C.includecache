@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/noumbissie/GLCS/heat.c
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+math.h
+-
+mpi.h
+-
+
+/usr/local/mpich-3.2/include/mpi.h
+stddef.h
+-
+cstdint
+-
+stdint.h
+-
+

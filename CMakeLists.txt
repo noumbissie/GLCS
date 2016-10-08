@@ -1,0 +1,11 @@
+cmake_minimum_required (VERSION 2.6)
+project(Heat)
+#the version number
+set(Heat_VERSION_MAJOR 1)
+set(Heat_VERSION_MINOR 0) 
+add_compile_options("-std=c99") 
+find_package(MPI) 
+find_package(HDF5) 
+add_executable(heat heat.c) 
+target_link_libraries(heat ${MPI_C_LIBRARIES} ${HDF5_C_LIBRARIES}) 
+include_directories(${MPI_C_INCLUDE_PATH} ${HDF5_INCLUDE_DIRS})
